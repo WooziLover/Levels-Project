@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class ThunderClap : MonoBehaviour
 {
-   /* Light light = GetComponent<Light>();
+    new Light light;
     bool canFlicker = true;
+
+    void Start()
+    {
+        light = GetComponent<Light>();
+    }
 
     void Update()
     {
@@ -24,5 +29,5 @@ public class ThunderClap : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(0.1f, 5));
             canFlicker = true;
         }
-    }*/
+    }
 }
